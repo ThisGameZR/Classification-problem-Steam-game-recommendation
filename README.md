@@ -179,7 +179,7 @@ The AUC score of the SVM-Poly model is 0.665, which is higher than the AUC score
 | SVM-RBF    | 60  | 3067 | 45  | 16828 |
 | SVM-Poly   | 77  | 3050 | 79  | 16794 |
 
-Looking at the AUC scores, we can see that SVM-RBF has the lowest AUC score, followed by KNN, SVM-Poly, LR, and SVM-Linear. This suggests that SVM-RBF and KNN may not be the best models for this dataset.
+Looking at the AUC scores, we can see that SVM-RBF has the lowest AUC score, followed by SVM-Poly, KNN, LR, and SVM-Linear. This suggests that SVM-RBF and SVM-Poly may not be the best models for this dataset.
 
 When we consider the classification report for accuracy, precision, recall, and f1-score, we can see that all models have a similar accuracy rate of around 84%. However, the precision, recall, and f1-score differ significantly between the models.
 
