@@ -189,15 +189,15 @@ Overall, the LR and SVM-Linear models seem to have the best performance in terms
 
 # **Download Models**
 
-[K-Nearest Neighbors](./knn_pipeline.pkl)
+[K-Nearest Neighbors](./models/knn_pipeline.pkl)
 
-[Logistic Regression](./lr_pipeline.pkl)
+[Logistic Regression](./models/lr_pipeline.pkl)
 
-[SVM with Linear Kernel](./svm_linear_pipeline.pkl)
+[SVM with Linear Kernel](./models/svm_linear_pipeline.pkl)
 
-[SVM with RBF kernel](./svm_rbf_pipeline.pkl)
+[SVM with RBF kernel](./models/svm_rbf_pipeline.pkl)
 
-[SVM with Polynomial Kernel]('./svm_poly_pipeline.pkl')
+[SVM with Polynomial Kernel]('./models/svm_poly_pipeline.pkl')
 
 # **Resources**
 
