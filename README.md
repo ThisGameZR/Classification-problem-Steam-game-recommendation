@@ -179,13 +179,24 @@ The AUC score of the SVM-Poly model is 0.665, which is higher than the AUC score
 | SVM-RBF    | 60  | 3067 | 45  | 16828 |
 | SVM-Poly   | 77  | 3050 | 79  | 16794 |
 
+- True Positive (TP): The model correctly recommends a good game.
+- True Negative (TN): The model correctly does not recommend a bad game.
+- False Positive (FP): The model recommends a game that is not good (a false alarm).
+- False Negative (FN): The model does not recommend a game that is good (a missed opportunity).
+
 Looking at the AUC scores, we can see that SVM-RBF has the lowest AUC score, followed by SVM-Poly, KNN, LR, and SVM-Linear. This suggests that SVM-RBF and SVM-Poly may not be the best models for this dataset.
 
 When we consider the classification report for accuracy, precision, recall, and f1-score, we can see that all models have a similar accuracy rate of around 84%. However, the precision, recall, and f1-score differ significantly between the models.
 
 Among the models, LR and SVM-Linear have similar performance in terms of precision, recall, and f1-score. SVM-Poly has the highest precision for False class, while LR and SVM-Linear have the highest recall and f1-score for False class. SVM-RBF has the lowest precision and recall for False class.
 
-Overall, the LR and SVM-Linear models seem to have the best performance in terms of balanced precision and recall, with LR having the higher AUC score. However, it's important to note that the choice of the best model depends on the specific needs and constraints of the project.
+Overall, the LR and SVM-Linear models seem to have the best performance in terms of balanced precision and recall, with lowest FN which I think is more important for game recommendation.
+
+**_Note:_**
+
+##### In the context of game recommendation, it might be more important to lower FN (false negatives) than FP (false positives). This is because recommending a good game to a user who may not be interested in it (a false positive) may not have as severe consequences as failing to recommend a game that the user would enjoy (a false negative).
+
+##### A false negative could lead to a negative user experience, dissatisfaction, and potentially even losing the user to a competitor platform. On the other hand, a false positive might result in the user simply ignoring the recommendation or trying out a game they may not have otherwise considered, which may not have as significant an impact on user experience.
 
 # **Download Models**
 
